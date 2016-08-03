@@ -3,6 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  img(src= "https://wiki.jenkins-ci.org/download/attachments/99451533/codefresh_logo_f_left-nc+%281%29.png?version=1&modificationDate=1469777553000")
   form(name="leftpad", action="/leftpad", method="post")
     span.label String2Pad
     input(type="text", name="string2pad", id="str2pad")
