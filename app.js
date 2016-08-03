@@ -9,10 +9,7 @@ var methodOverride = require('method-override');
 var bodyParser = require('body-parser');
 var errorHandler = require('errorhandler');
 
-
 var app = express();
-
-
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -31,5 +28,5 @@ app.post( '/leftpad', routes.leftpad );
 app.post( '/leftpad-api', api.leftpad );
 
 http.createServer(app).listen(app.get('port'), function(){
-  console.log('Express server listening on port ' + app.get('port'));
+  console.log('Express server now listening on port ' + app.get('port'));
 });
