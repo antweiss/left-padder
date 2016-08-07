@@ -31,5 +31,5 @@ app.post( '/leftpad', routes.leftpad );
 app.post( '/leftpad-api', api.leftpad );
 
 http.createServer(app).listen(app.get('port'), "0.0.0.0", function(){
-  console.log('Express server listening on port ' + app.get('port'));
+  console.log('Express server listening on 0.0.0.0 - port ' + app.get('port'));
 });
